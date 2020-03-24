@@ -1,9 +1,12 @@
 import React from 'react'
-
+// import Login from './components/Login.js'
+import Profile from './components/Profile.js'
 
 function App() {
   return (
-    <h1>Blog App</h1>
+    <>
+      <Profile />
+    </>
   )
 }
 
