@@ -38,6 +38,8 @@ passport.use(new JWTStrategy({
     .catch( error => cb(error))
 ))
 
+//bringing in routes
+app.use(require('./routes'))
 
 require('./config')
   .then(() => app.listen(process.env.PORT || 3001))
