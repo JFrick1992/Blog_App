@@ -2,6 +2,9 @@ const router = require('express').Router()
 
 const {User} = require('../models')
 
+//bring in passport to lock routes
+const passport = require('passport')
+
 //bring in jwt to return if the user sucessfully logs in
 const jwt = require('jsonwebtoken')
 
@@ -35,5 +38,14 @@ router.post('/users/login', (request, response) => {
   })
 })
 
+//test route to check for authorization
+// router.get('/users', passport.authenticate('jwt'), (request, response) => {
+//   User.find()
+//   .then( users => response.json(users))
+//   .catch(error => {
+//     console.error(error)
+//     response.sendStatus(400)
+//   })
+// })
 
 module.exports = router
