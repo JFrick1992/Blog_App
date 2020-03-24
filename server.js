@@ -8,7 +8,4 @@ app.use(express.static(join(__dirname, 'client', 'build')))
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 
-
-require('./config')
-  .then(() => app.listen(process.env.PORT || 3001))
-  .catch(e => console.error(e))
+app.listen(process.env.PORT || 3001)
