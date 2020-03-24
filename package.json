@@ -15,7 +15,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+<<<<<<< HEAD
     "@material-ui/core": "^4.9.7",
+=======
+    "@material-ui/icons": "^4.9.1",
+>>>>>>> d1bba5be5eac17bf05a99cca517e3fabae656165
     "concurrently": "^5.1.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
