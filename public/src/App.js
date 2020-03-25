@@ -5,6 +5,7 @@ import {
   Route
 } from "react-router-dom";
 import CreateBlog from './components/CreateBlog'
+import Profile from './components/Profile'
 function App() {
   return (
     <Router>
@@ -19,7 +20,7 @@ function App() {
           <h1>Home</h1>
         </Route>
       </Switch>
-  </Router>
+    </Router>
   )
 }
 

@@ -51,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-export default function Login() {
+const Profile = () => {
   const classes = useStyles();
   return (
     <Container component="main" maxWidth="xs">
@@ -96,3 +96,4 @@ export default function Login() {
     </Container>
   );
 }
+export default Profile
